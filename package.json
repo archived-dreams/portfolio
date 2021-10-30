@@ -6,14 +6,13 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@intlify/nuxt3": "^0.1.6",
-    "@types/lodash": "^4.14.176",
+    "@types/lodash-es": "^4.17.5",
     "nuxt3": "^3.0.0-27258467.4e424d0",
     "sass": "^1.43.4"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "lottie-web": "^5.7.14",
     "normalize.css": "^8.0.1"
   }

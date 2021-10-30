@@ -3,8 +3,6 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-
 const { $router } = useNuxtApp()
 const { t } = useI18n()
 

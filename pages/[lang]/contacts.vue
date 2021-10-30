@@ -52,7 +52,6 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
 import sticker from '~/assets/stickers/contacts.json'
 // const { data: sticker } = await useFetch('/stickers/contacts.json')
 

@@ -28,8 +28,7 @@
 </template>
 
 <script setup>
-import set from 'lodash/set.js'
-import { useI18n } from 'vue-i18n'
+import set from 'lodash-es/set'
 
 const { t } = useI18n()
 

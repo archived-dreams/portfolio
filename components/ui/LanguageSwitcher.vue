@@ -22,8 +22,6 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-
 const { $router } = useNuxtApp()
 const { t, locale } = useI18n()
 const currentRoute = computed(() => $router.currentRoute.value)
