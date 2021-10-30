@@ -8,7 +8,7 @@
         </Head>
         <!-- Meta :: Dynamic -->
         <Head :lang="locale" :key="canonicalUrl">
-            <meta property="og:url" :content="canonicalUrl" />
+            <Meta property="og:url" :content="canonicalUrl" />
             <Link rel="canonical" :href="canonicalUrl" />
             <Link rel="alternate" hreflang='ru' :href="canonicalUrl.replace(/\/(ru|en|^$)(\/|$)/, '/ru$2')" />
             <Link rel="alternate" hreflang='en' :href="canonicalUrl.replace(/\/(ru|en|^$)(\/|$)/, '/en$2')" />
