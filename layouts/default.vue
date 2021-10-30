@@ -4,7 +4,7 @@
         <Head>
             <Link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             <Link rel="preload" href="/logo.webp" type="image/webp" />
-            <Meta name="theme-color" content="#6d1942" />
+            <!-- <Meta name="theme-color" content="#6d1942" /> -->
         </Head>
         <!-- Meta :: Dynamic -->
         <Head :lang="locale" :key="canonicalUrl">
