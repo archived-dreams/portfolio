@@ -1,13 +1,17 @@
 <template>
-  <div>
-    <NuxtPage/>
-  </div>
+  <transition name="fade" mode="out-in">
+    <div :key="locale" v-if="!isIncorrectLocale">
+      <NuxtPage/>
+    </div>
+  </transition>
 </template>
 
 <script setup>
 const { $router } = useNuxtApp()
 const currentRoute = computed(() => $router.currentRoute.value)
 const { locale } = useI18n()
+
+const isIncorrectLocale = computed(() => !['ru', 'en'].includes(locale.value))
 
 /** Set language */
 watch(
@@ -20,16 +24,15 @@ watch(
 watch(
   () => currentRoute.value.matched, 
   () => {
-    console.log()
     const userLanguage = process.client ? String(navigator?.language || navigator?.userLanguage || 'en').toLowerCase() : 'en'
     if (currentRoute.value.matched.length === 0 || !['ru', 'en'].includes(currentRoute.value.params.lang)) {
       const redurectLanguage = userLanguage.includes('ru') || userLanguage.includes('ua') ? 'ru' : 'en'
-
-      if (currentRoute.value.matched.length === 0 || currentRoute.value.path === '/') {
+      const routeName = currentRoute.value.name
+      if (currentRoute.value.matched.length === 0 || currentRoute.value.path === '/' || routeName === 'index') {
         $router.replace(`/${redurectLanguage}`)
-      } else if (currentRoute.value.name) {
+      } else if (routeName) {
         $router.replace({
-          name: currentRoute.value.name,
+          name: routeName,
           params: {
             ...currentRoute.value.params,
             lang: redurectLanguage
@@ -41,4 +44,12 @@ watch(
   { immediate: true }
 )
 
+</script>
+
+<script>
+export default {
+  middleware() {
+    console.log('-------------')
+  }
+}
 </script>

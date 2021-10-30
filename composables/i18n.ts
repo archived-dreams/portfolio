@@ -1,6 +1,6 @@
 import get from 'lodash-es/get'
 import * as en from '~/locales/en.json'
-import * as ru from '~/locales/en.json'
+import * as ru from '~/locales/ru.json'
 
 const messages = { en, ru }
 
