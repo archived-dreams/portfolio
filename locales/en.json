@@ -1,0 +1,141 @@
+{
+  "ui": {
+    "logo": "Memoji 😜",
+    "menu": {
+      "resume": "Resume",
+      "about": "About",
+      "contacts": "Contact",
+      "portfolio": "Works"
+    },
+    "language-switcher": {
+      "title": "Switch language"
+    }
+  },
+  "about": {
+    "meta:title": "Jonas Danilov",
+    "title": "Hi, I’m Jonas 🤪",
+    "content": "An ethical hacker, a web application developer, I have experience working on high-load projects, I conduct audits in the field of information security.",
+    "tags": {
+      "russian": "Russian",
+      "lithuanian": "Lithuanian",
+      "english": "English",
+      "native": "Native"
+    }
+  },
+  "contacts": {
+    "title": "Contacts"
+  },
+  "portfolio": {
+    "title": "Works",
+    "navigation": "Navigation between works",
+    "@terms": {
+      "pentester": "Information security specialist",
+      "web-dev": "Web application developer",
+      "freelance": "Freelance",
+      "mobile": "Mobile application development",
+      "junior": "Junior",
+      "open-github": "Open on GitHub",
+      "open-web": "Open the website",
+      "appstore": "Appstore",
+      "google-play": "Google Play",
+      "pet": "Pet project",
+      "opensource": "Opensource",
+      "mvp": "MVP"
+    },
+    "webtransfer": {
+      "title": "🏦 Webtransfer Finance",
+      "description": "I started my professional career as a junior developer and information security specialist. I had a chance to work with a highly loaded credit exchange."
+    },
+    "ipserver": {
+      "title": "👩‍💻 Ipcserver LP",
+      "description": "The main areas of work were: process automation, software development for interaction with server hardware and data centers, development of tools for internal communication and employee control.",
+      "link": "https://www.ipserver.su/en"
+    },
+    "donatepay": {
+      "title": "🎮 DonatePay",
+      "description": "The work consisted of designing and developing the interface (UI/UX) of the new version of the web application, team and project management, optimize the server environment and solve problems caused by a sharp increase in traffic (COVID implications).",
+      "link": "https://donatepay.eu"
+    },
+    "esteri": {
+      "title": "🇮🇹 Italian Institute of Culture in 🇺🇦 Ukraine",
+      "description": "Mobile news app for the Italian Institute of Culture in Ukraine. Main technologies used during development: React Native, Firebase."
+    },
+    "bitcy": {
+      "title": "🤑 Bitcy",
+      "description": "Game on the bitcoin rate. Main technologies used during development: Vue.js (Nuxt.js, Vuetify), Apollo Server (GraphQL) "
+    },
+    "dante": {
+      "title": "🛡 Dante Web GUI",
+      "description": "Developed in 2018, the Dante server management GUI (Proxy 6). The main purpose is an easy connection for Telegram users."
+    },
+    "streamtip": {
+      "title": "👾 Donation service",
+      "description": "Service for accepting donations on streams. Originally developed as a college thesis (~2018). It was later published on Github."
+    },
+    "b2bhomer": {
+      "title": "🏠 B2Bhomer",
+      "description": "Corporate search and rental housing service in Germany. Technologies used: React, Apollo Server, Node.js ."
+    }
+  },
+  "timeline": {
+    "title": "Education & Experience",
+    "items": {
+      "klpvm": {
+        "icon": {
+          "emoji": "🎒",
+          "src": "",
+          "alt": "Emoji Backpack"
+        },
+        "title": "Klaipeda Service and Business School",
+        "subtitle": "Web-Developer, Computer Network Operator",
+        "period": {
+          "start": "2015",
+          "end": "2018"
+        },
+        "description": ""
+      },
+      "webtransfer": {
+        "icon": {
+          "emoji": "🏦",
+          "src": "",
+          "alt": "Emoji Bank"
+        },
+        "title": "Webtransfer Finance",
+        "subtitle": "Information security specialist, Web application developer (Junior)",
+        "period": {
+          "start": "2014",
+          "end": "2016"
+        },
+        "description": "I started my professional career as a junior developer and information security specialist. I had a chance to work with a highly loaded credit exchange."
+      },
+      "ipserver": {
+        "icon": {
+          "emoji": "",
+          "src": "/_nuxt/portfolio/ipserver/icon.png",
+          "alt": "Ipserver LP logo"
+        },
+        "title": "Ipserver LP",
+        "subtitle": "Web Application Developer",
+        "period": {
+          "start": "2015",
+          "end": "2019"
+        },
+        "description": "The main areas of work were: process automation, software development for interaction with server hardware and data centers, development of tools for internal communication and employee control."
+      },
+      "donatepay": {
+        "icon": {
+          "emoji": "",
+          "src": "/_nuxt/portfolio/donatepay/icon.png",
+          "alt": "Donatepay logo"
+        },
+        "title": "DonatePay",
+        "subtitle": "Web Application Developer",
+        "period": {
+          "start": "2019",
+          "end": "2020"
+        },
+        "description": "The work consisted of designing and developing the interface (UI/UX) of the new version of the web application, team and project management, optimize the server environment and solve problems caused by a sharp increase in traffic (COVID implications)."
+      }
+    }
+  }
+}
