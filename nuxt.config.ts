@@ -1,7 +1,12 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-    ssr: false,
+    // ssr: true,
+
+    nitro: {
+        preset: 'browser'
+    },
+
     css: ['normalize.css'],
 
     buildModules: ['@intlify/nuxt3'],
