@@ -57,6 +57,7 @@ const { t, locale } = useI18n()
 
         &__item {
             display: inline-block;
+            white-space: nowrap;
         }
 
         &__link {

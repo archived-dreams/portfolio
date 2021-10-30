@@ -25,7 +25,9 @@
         }
 
         @media screen and (max-width: 824px) {
-            flex-direction: column;
+            &__inner {
+                flex-direction: column;
+            }
 
             &__menu, &__logo {
                 margin: 0 auto;
@@ -33,6 +35,15 @@
 
             &__logo {
                 margin-bottom: 8px;
+            }
+
+            &__menu {
+                max-width: calc(100% + 48px);
+                overflow-x: auto;
+                margin: 0 -24px;
+                .menu__list {
+                    margin: 0 28px;
+                }
             }
         }
     }
