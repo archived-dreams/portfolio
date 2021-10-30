@@ -3,7 +3,7 @@
     <div class="about__photo">
         <picture>
             <source srcset="/photo.webp" type="image/webp">
-            <img src="/photo.png" loading="lazy" alt="Photo" width="405" height="512" :style="{ aspectRatio: '405 / 512' }">
+            <img src="/photo.png" alt="Photo" width="405" height="512" :style="{ aspectRatio: '405 / 512' }">
         </picture>
     </div>
     <div class="about__main">
