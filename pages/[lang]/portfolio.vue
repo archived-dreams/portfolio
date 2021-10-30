@@ -87,7 +87,12 @@ onBeforeUnmount(() => {
     window.removeEventListener('resize', scrollTrigger)
 })
 
-useMeta({ title: t('portfolio.title') })
+useMeta({ 
+    link: [
+        { rel: 'preload', href: '/portfolio/donatepay/screenshot.webp', as: 'image', type: 'image/webp' }
+    ],
+    title: t('portfolio.title')
+})
 </script>
 
 <style lang="scss">
@@ -191,7 +196,6 @@ useMeta({ title: t('portfolio.title') })
                 height: auto;
                 object-fit: cover;
                 color: var(--overlay-color);
-                aspect-ratio: attr(width) / attr(height);
             }
 
             @media screen and (max-width: 560px) {

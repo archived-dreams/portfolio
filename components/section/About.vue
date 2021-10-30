@@ -3,7 +3,7 @@
     <div class="about__photo">
         <picture>
             <source srcset="/photo.webp" type="image/webp">
-            <img src="/photo.png" loading="lazy" alt="Photo">
+            <img src="/photo.png" loading="lazy" alt="Photo" width="405" height="512" :style="{ aspectRatio: '405 / 512' }">
         </picture>
     </div>
     <div class="about__main">
@@ -41,11 +41,12 @@ const { t } = useI18n()
 <style lang="scss">
     .about {
         display: flex;
-        margin: 122px 0 42px 0;
+        min-height: calc(100vh - 72px);
         align-items: center;
         position: relative;
 
         @media screen and (max-width: 614px) {
+            min-height: auto;
             flex-direction: column;
             margin-top: 16px;
         }
@@ -60,6 +61,7 @@ const { t } = useI18n()
 
             img {
                 width: 100%;
+                height: auto;
                 object-fit: cover;
                 border-radius: 12px;
                 padding-top: 20px;
@@ -86,6 +88,7 @@ const { t } = useI18n()
 
         &__content {
             font-size: 1.3rem;
+            margin-bottom: 48px;
 
             @media screen and (max-width: 768px) {
                 text-align: justify;

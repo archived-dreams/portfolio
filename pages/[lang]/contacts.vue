@@ -57,7 +57,12 @@ import sticker from '~/assets/stickers/contacts.json'
 
 const { t } = useI18n()
 
-useMeta({ title: t('contacts.title') })
+useMeta({ 
+    link: [
+        { rel: 'preload', href: '/contacts-overlay.jpg', as: 'image', type: 'image/jpg' }
+    ],
+    title: t('contacts.title')
+})
 </script>
 
 <style lang="scss">

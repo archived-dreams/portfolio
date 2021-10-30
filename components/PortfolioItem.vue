@@ -37,6 +37,7 @@
                             alt="Screenshot"
                             :width="String(mediaWidth)"
                             :height="String(mediaHeight)"
+                            :style="{ aspectRatio: `${mediaWidth} / ${mediaHeight}` }"
                         />
                     </picture>
                 </slot>
