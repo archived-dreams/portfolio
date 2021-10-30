@@ -3,8 +3,7 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "start:main": "node .output/server/index.mjs",
-    "start": "node http.mjs"
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
     "@intlify/nuxt3": "^0.1.6",
