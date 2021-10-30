@@ -11,6 +11,11 @@
       "title": "Switch language"
     }
   },
+  "meta": {
+    "title": "Jonas Danilov — Web developer, information security consultant",
+    "firstName": "Jonas",
+    "lastName": "Danilov"
+  },
   "about": {
     "meta:title": "Jonas Danilov",
     "title": "Hi, I’m Jonas 🤪",

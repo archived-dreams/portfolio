@@ -57,6 +57,7 @@ const switchLanguage = (code) => {
         bottom: -80px;
         left: 6px;
         background: var(--overlay-color);
+        backdrop-filter: blur(6px);
         border-radius: 6px;
         z-index: 2;
         transition: all 100ms ease 40ms;

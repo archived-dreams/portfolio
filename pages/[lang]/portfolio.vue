@@ -91,17 +91,30 @@ useMeta({ title: t('portfolio.title') })
 </script>
 
 <style lang="scss">
+    .main--portfolio {
+        max-width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+    }
+
     .portfolio {
         display: block;
 
         &__item {
-            scroll-snap-align: start;
             display: flex;
-            flex-direction: column;
-            min-height: calc(100vh - 160px);
-            justify-content: center;
+            scroll-snap-align: start;
+            min-height: 100vh;
+            max-width: 100%;
             position: relative;
-            padding: 80px 0;
+            overflow: hidden;
+        }
+
+        &__inner {
+            display: flex;
+            min-height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 24px !important;
         }
 
         @media screen and (min-width: 617px) {
@@ -140,12 +153,13 @@ useMeta({ title: t('portfolio.title') })
         }
 
         @media screen and (min-width: 1053px) {
-            &__grid {
-                display: flex;
+            &--grid {
+                flex-direction: row;
                 align-items: center;
+                justify-content: center;
             }
 
-            &__main {
+            &--grid &__content {
                 max-width: 45%;
                 margin-left: 24px;
                 order: 2;
@@ -174,8 +188,10 @@ useMeta({ title: t('portfolio.title') })
             img {
                 display: flex;
                 width: 100%;
+                height: auto;
                 object-fit: cover;
                 color: var(--overlay-color);
+                aspect-ratio: attr(width) / attr(height);
             }
 
             @media screen and (max-width: 560px) {

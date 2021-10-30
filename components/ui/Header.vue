@@ -38,11 +38,16 @@
             }
 
             &__menu {
-                max-width: calc(100% + 48px);
+                --header-width: calc(100% + 48px)
+
+                max-width: var(--header-width);
+                min-width: var(--header-width);
                 overflow-x: auto;
                 margin: 0 -24px;
+
                 .menu__list {
-                    margin: 0 28px;
+                    justify-content: center;
+                    margin: 0;
                 }
             }
         }

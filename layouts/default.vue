@@ -3,9 +3,11 @@
         <!-- Meta :: Static -->
         <Head>
             <Link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+            <Meta name="theme-color" content="#6d1942" />
         </Head>
         <!-- Meta :: Dynamic -->
         <Head :lang="locale" :key="canonicalUrl">
+            <meta property="og:url" :content="canonicalUrl" />
             <Link rel="canonical" :href="canonicalUrl" />
             <Link rel="alternate" hreflang='ru' :href="canonicalUrl.replace(/\/(ru|en|^$)(\/|$)/, '/ru$2')" />
             <Link rel="alternate" hreflang='en' :href="canonicalUrl.replace(/\/(ru|en|^$)(\/|$)/, '/en$2')" />
@@ -14,7 +16,7 @@
         <!-- Layout -->
         <UiHeader />
         <transition name="fade" mode="out-in">
-            <main class="main container" :key="routeName">
+            <main class="main container" :class="`main--${routeName.replace('lang-', '')}`" :key="routeName">
                 <slot />
             </main>
         </transition>
@@ -23,11 +25,24 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { t, locale } = useI18n()
 const { $router } = useNuxtApp()
 const currentRoute = computed(() => $router.currentRoute.value)
 const routeName = computed(() => currentRoute.value.name)
 const canonicalUrl = computed(() => currentRoute.value.path.replace(/\/$/, ''))
+
+useMeta({
+    meta: [
+        { property: 'og:title', content: t('meta.title') },
+        { property: 'og:description', content: t('about.content') },
+        { property: 'og:image', content: '/banner.jpg' },
+        { property: 'og:type', content: 'profile' },
+        { property: 'profile:first_name', content: t('meta.firstName') },
+        { property: 'profile:last_name', content: t('meta.lastName') },
+        { property: 'profile:gender', content: 'male' },
+    ],
+})
+
 </script>
 
 <style lang="scss">
@@ -38,12 +53,14 @@ const canonicalUrl = computed(() => currentRoute.value.path.replace(/\/$/, ''))
         --overlay-color: #d3d6db;
         --link-color: #820039;
 
-        max-width: 100%;
-        scrollbar-width: none;
-        ::-webkit-scrollbar { display: block; }
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
+        color-scheme: light;
+
+        @media screen and (min-width: 617px) {
+            // scrollbar-width: none;
+            // ::-webkit-scrollbar { display: block; }
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
 
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         color: var(--main-color);
@@ -60,6 +77,8 @@ const canonicalUrl = computed(() => currentRoute.value.path.replace(/\/$/, ''))
             --background-opacity-color: #191c20b9;
             --overlay-color: #2c3239;
             --link-color: #e1b5c8;
+
+            color-scheme: dark;
         }
 
         .monocolor-icon {
@@ -92,11 +111,11 @@ const canonicalUrl = computed(() => currentRoute.value.path.replace(/\/$/, ''))
     /** Transition */
     .fade-enter-active,
     .fade-leave-active {
-    transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
     }
 
     .fade-enter-from,
     .fade-leave-to {
-    opacity: 0;
+        opacity: 0;
     }
 </style>
