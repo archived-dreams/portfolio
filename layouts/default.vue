@@ -91,6 +91,11 @@ useMeta({
         color: var(--main-color);
     }
 
+    img {
+        color: rgba(0, 0, 0, 0);
+        border-width: 0;
+    }
+
     .container {
         max-width: 1024px;
         margin: 0 auto;
