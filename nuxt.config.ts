@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-    // ssr: false,
+    ssr: false,
     css: ['normalize.css'],
 
     buildModules: ['@intlify/nuxt3'],
