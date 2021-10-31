@@ -217,6 +217,7 @@
                         <span class="resume__tag">React Native</span>
                         <span class="resume__tag">♥️ Laravel</span>
                         <span class="resume__tag">♥️ A11y</span>
+                        <span class="resume__tag">♥️ {{ t('about.tags.bem') }}</span>
                     </div>
                 </section>
 
