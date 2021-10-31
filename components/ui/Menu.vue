@@ -2,17 +2,17 @@
     <nav class="menu">
         <ul class="menu__list">
             <!-- LinedIn -->
-            <li class="menu__item menu--desktop-only">
+            <!-- <li class="menu__item menu--desktop-only">
                 <a class="menu__link" href="https://www.linkedin.com/in/kriakiku/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </a>
-            </li>
+            </li> -->
             <!-- HackerOne -->
-            <li class="menu__item menu--desktop-only">
+            <!-- <li class="menu__item menu--desktop-only">
                 <a class="menu__link" href="https://hackerone.com/kriakiku" target="_blank" rel="noopener noreferrer">
                     HackerOne
                 </a>
-            </li>
+            </li> -->
             <!-- Resume -->
             <li class="menu__item">
                 <NuxtLink class="menu__link" :to="`/${locale}/resume`">

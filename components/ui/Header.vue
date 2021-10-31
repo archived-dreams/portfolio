@@ -38,16 +38,23 @@
             }
 
             &__menu {
-                --header-width: calc(100% + 48px)
-
-                max-width: var(--header-width);
-                min-width: var(--header-width);
+                max-width: 100vw;
+                min-width: 100vw;
                 overflow-x: auto;
                 margin: 0 -24px;
 
                 .menu__list {
+                    display: block;
                     justify-content: center;
+                    white-space: nowrap;
                     margin: 0;
+                    padding-left: 14px;
+                }
+
+                .menu__item {
+                    &:last-child {
+                        margin-right: 14px;
+                    }
                 }
             }
         }

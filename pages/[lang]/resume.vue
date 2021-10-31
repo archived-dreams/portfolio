@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Print -->
-        <button class="tag resume__print" type="button" @click="print">
+        <button class="resume__print" type="button" @click="print">
             🖨 {{ t('resume.print') }}
         </button>
 
@@ -441,6 +441,12 @@ useMeta({
             display: block;
             border: 0;
             cursor: pointer;
+            padding: 8px 16px;
+            background-color: var(--overlay-color);
+            line-height: 1;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
             margin: 24px auto 0 auto;
         }
 
