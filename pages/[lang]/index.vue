@@ -28,7 +28,7 @@
                 <UiTag>JAVA</UiTag>
                 <UiTag>C++</UiTag>
                 <UiTag>♥️ Vue</UiTag>
-                <UiTag>React</UiTag>
+                <UiTag>♥️ React</UiTag>
                 <UiTag>Angular</UiTag>
                 <UiTag>NativeScript</UiTag>
                 <UiTag>React Native</UiTag>

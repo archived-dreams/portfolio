@@ -204,20 +204,20 @@
                         <h2 class="resume__title resume__title--h2">
                             {{ t('resume.skills.title') }}:
                         </h2>
-                        <span class="resume__tag">♥️ UI/UX Design</span>
-                        <span class="resume__tag">♥️ Penetration testing</span>
-                        <span class="resume__tag">♥️ JavaScript<small>/ES/TS</small></span>
+                        <span class="resume__tag">UI/UX Design</span>
+                        <span class="resume__tag">Penetration testing</span>
+                        <span class="resume__tag">JavaScript<small>/ES/TS</small></span>
                         <span class="resume__tag">PHP</span>
                         <span class="resume__tag">JAVA</span>
                         <span class="resume__tag">C++</span>
-                        <span class="resume__tag">♥️ Vue</span>
+                        <span class="resume__tag">Vue</span>
                         <span class="resume__tag">React</span>
                         <span class="resume__tag">Angular</span>
                         <span class="resume__tag">NativeScript</span>
                         <span class="resume__tag">React Native</span>
-                        <span class="resume__tag">♥️ Laravel</span>
-                        <span class="resume__tag">♥️ A11y</span>
-                        <span class="resume__tag">♥️ {{ t('about.tags.bem') }}</span>
+                        <span class="resume__tag">Laravel</span>
+                        <span class="resume__tag">A11y</span>
+                        <span class="resume__tag">{{ t('about.tags.bem') }}</span>
                     </div>
                 </section>
 
