@@ -32,7 +32,7 @@
                 <UiTag>Angular</UiTag>
                 <UiTag>NativeScript</UiTag>
                 <UiTag>React Native</UiTag>
-                <UiTag>Laravel</UiTag>
+                <UiTag>♥️ Laravel</UiTag>
                 <UiTag>♥️ A11y</UiTag>
                 <UiTag>🇷🇺 {{ t('about.tags.russian') }} <small>({{ t('about.tags.native') }})</small></UiTag>
                 <UiTag>🇱🇹 {{ t('about.tags.lithuanian') }} <small>(B2)</small></UiTag>

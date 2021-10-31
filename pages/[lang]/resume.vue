@@ -215,7 +215,7 @@
                         <span class="resume__tag">Angular</span>
                         <span class="resume__tag">NativeScript</span>
                         <span class="resume__tag">React Native</span>
-                        <span class="resume__tag">Laravel</span>
+                        <span class="resume__tag">♥️ Laravel</span>
                         <span class="resume__tag">♥️ A11y</span>
                     </div>
                 </section>
