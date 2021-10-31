@@ -61,12 +61,17 @@ useMeta({
             // ::-webkit-scrollbar { display: block; }
             scroll-snap-type: y mandatory;
             scroll-behavior: smooth;
+            overflow-y: scroll;
         }
 
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         color: var(--main-color);
         background-color: var(--background-color);
     }
+
+    // body {
+    //     overflow-y: scroll;
+    // }
 
     /**
      * Dark mode
