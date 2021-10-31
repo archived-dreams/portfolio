@@ -1,5 +1,10 @@
 <template>
     <div class="resume__container">
+        <Head>
+            <Link rel="preconnect" href="https://fonts.googleapis.com" />
+            <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <Link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+        </Head>
         <section class="resume">
             <!-- Meta -->
             <div class="resume__meta">
@@ -252,6 +257,7 @@ useMeta({
         padding: 6mm 10mm;
         background: #fff;
         color: #000;
+        font-family: 'Roboto Condensed', sans-serif;
         text-align: left;
 
         a {
@@ -260,7 +266,8 @@ useMeta({
         }
 
         &__container {
-            max-width: 100%;
+            width: 100%;
+            max-width: 210mm;
             overflow: auto;
             margin: 24px auto;
             border-radius: 6px;
