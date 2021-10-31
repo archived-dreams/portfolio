@@ -231,10 +231,15 @@
 const { t, locale } = useI18n()
 
 const removeEmoji = (string) => string.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, '')
+const printTimer = reactive(null)
 
 onMounted(() => {
-    process.env.NODE_ENV !== 'development' && process.client && window && window.print();
+    printTimer = setTimeout(() => {
+        process.env.NODE_ENV !== 'development' && process.client && window && window.print();
+    }, 1000)
 })
+
+onBeforeUnmount(() => clearTimeout(printTimer))
 
 useMeta({ 
     title: t('resume.title')
@@ -454,6 +459,15 @@ useMeta({
     
         .resume {
             margin: 0 !important;
+            overflow: visible;
+
+            &__container {
+                display: flex;
+                border: none;
+                margin: 0;
+                overflow: hidden;
+                max-height: calc(297mm - 1px);
+            }
         }
 
         * {
