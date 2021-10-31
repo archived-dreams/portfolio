@@ -117,7 +117,8 @@ useMeta({
                 min-height: auto;
                 margin: 24px 0 0 0;
                 border-radius: 24px;
-                border: 3px solid red;
+                border-top: 2px solid var(--overlay-color);
+                border-bottom: 2px solid var(--overlay-color);
 
                 &:last-child {
                     margin-bottom: 24px;
