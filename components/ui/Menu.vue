@@ -3,13 +3,13 @@
         <ul class="menu__list">
             <!-- LinedIn -->
             <li class="menu__item menu--desktop-only">
-                <a class="menu__link" href="https://www.linkedin.com/in/json-dev/" target="_blank" rel="noopener noreferrer">
+                <a class="menu__link" href="https://www.linkedin.com/in/kriakiku/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </a>
             </li>
             <!-- HackerOne -->
             <li class="menu__item menu--desktop-only">
-                <a class="menu__link" href="https://hackerone.com/rainbow_json" target="_blank" rel="noopener noreferrer">
+                <a class="menu__link" href="https://hackerone.com/kriakiku" target="_blank" rel="noopener noreferrer">
                     HackerOne
                 </a>
             </li>

@@ -25,22 +25,22 @@
                 </li>
                 <!-- LinkedIn -->
                 <li class="contacts__item">
-                    <a class="contacts__link" href="https://www.linkedin.com/in/json-dev/" target="_blank">
+                    <a class="contacts__link" href="https://www.linkedin.com/in/kriakiku/" target="_blank">
                         <h4 class="contacts__label">
                             <img class="contacts__icon" src="/icons/linkedin.svg" alt="LinkedIn Logo" width="18" height="18" />
                             LinkedIn
                         </h4>
-                        <p class="contacts__value">https://www.linkedin.com/in/json-dev</p>
+                        <p class="contacts__value">https://www.linkedin.com/in/kriakiku</p>
                     </a>
                 </li>
                 <!-- HackerOne -->
                 <li class="contacts__item">
-                    <a class="contacts__link" href="https://hackerone.com/rainbow_json" target="_blank">
+                    <a class="contacts__link" href="https://hackerone.com/kriakiku" target="_blank">
                         <h4 class="contacts__label">
                             <img class="contacts__icon" src="/icons/hackerone.svg" alt="HackerOne Logo" width="18" height="18" />
                             HackerOne
                         </h4>
-                        <p class="contacts__value">https://hackerone.com/rainbow_json</p>
+                        <p class="contacts__value">https://hackerone.com/kriakiku</p>
                     </a>
                 </li>
             </ul>
