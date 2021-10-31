@@ -7,7 +7,7 @@
         media-size="md"
     >
         <template #actions>
-            <a class="portfolio__link" href="https://github.com/JsonDeveloper/StreamDonations" target="_blank" rel="noopener nofollow">
+            <a class="portfolio__link" href="https://github.com/kriakiku/StreamDonations" target="_blank" rel="noopener nofollow">
                 <img class="monocolor-icon" src="/icons/github.svg" width="20" height="20" alt="GitHub icon" />
                 {{ t('portfolio.@terms.open-github') }}
             </a>

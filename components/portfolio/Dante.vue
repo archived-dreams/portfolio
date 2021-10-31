@@ -6,7 +6,7 @@
         media-height="984"
     >
         <template #actions>
-            <a class="portfolio__link" href="https://github.com/JsonDeveloper/dante-gui" target="_blank" rel="noopener nofollow">
+            <a class="portfolio__link" href="https://github.com/kriakiku/dante-gui" target="_blank" rel="noopener nofollow">
                 <img class="monocolor-icon" src="/icons/github.svg" width="20" height="20" alt="GitHub icon" />
                 {{ t('portfolio.@terms.open-github') }}
             </a>
