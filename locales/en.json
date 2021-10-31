@@ -26,7 +26,17 @@
       "english": "English",
       "native": "Native"
     },
-    "action": "View my works"
+    "action": "View my works",
+    "location": {
+      "current": {
+        "title": "📍 Saint Petersburg",
+        "label": "Current location"
+      },
+      "previous": {
+        "title": "🏠 Kaliningrad",
+        "label": "Main location"
+      }
+    }
   },
   "contacts": {
     "title": "Contacts"
