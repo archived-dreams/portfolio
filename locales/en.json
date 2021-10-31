@@ -19,14 +19,14 @@
   "about": {
     "meta:title": "Jonas Danilov",
     "title": "Hi, I’m Jonas 🤪",
-    "content": "I am a web application developer, a researcher in the field of information security. I have extensive experience working on media and hosting products, I love automation, I am developing in the direction of accessibility (A11y, UX, UI) interfaces, I will conduct a penetration audit for your company .",
+    "content": "I am a web application developer, a researcher in the field of information security. I have extensive experience working on media and hosting products, I love automation, I am developing in the direction of accessibility (A11y, UX, UI) interfaces, I will conduct a penetration audit for your company 😏.",
     "tags": {
       "russian": "Russian",
       "lithuanian": "Lithuanian",
       "english": "English",
       "native": "Native"
     },
-    "action": "View my works →"
+    "action": "View my works"
   },
   "contacts": {
     "title": "Contacts"
@@ -70,7 +70,7 @@
     },
     "bitcy": {
       "title": "🤑 Bitcy",
-      "description": "Game on the bitcoin rate. Main technologies used during development: Vue.js (Nuxt.js, Vuetify), Apollo Server (GraphQL) "
+      "description": "Game on the bitcoin rate. Main technologies used during development: Vue.js (Nuxt.js, Vuetify), Apollo Server (GraphQL)."
     },
     "dante": {
       "title": "🛡 Dante Web GUI",
@@ -82,7 +82,7 @@
     },
     "b2bhomer": {
       "title": "🏠 B2BHomer",
-      "description": "Corporate search and rental housing service in Germany. Technologies used: React, Apollo Server, Node.js ."
+      "description": "Corporate search and rental housing service in Germany. Technologies used: React, Apollo Server, Node.js."
     },
     "pentests": {
       "title": "👨‍🔬 Information Security Researcher",
