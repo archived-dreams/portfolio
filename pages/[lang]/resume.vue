@@ -5,7 +5,7 @@
             <div class="resume__meta">
                 <!-- Header -->
                 <header class="resume__header">
-                    <h1 class="resume__title resume__title--h1">Jonas Danilov</h1>
+                    <h1 class="resume__title resume__title--h1">{{ t('resume.name') }}</h1>
                     <picture>
                         <source srcset="/photo.webp" type="image/webp" />
                         <img class="resume__photo" src="/photo.png" alt="Photo" width="405" height="512" />
@@ -229,6 +229,10 @@ const removeEmoji = (string) => string.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\
 
 onMounted(() => {
     process.env.NODE_ENV !== 'development' && process.client && window && window.print();
+})
+
+useMeta({ 
+    title: t('resume.title')
 })
 </script>
 
