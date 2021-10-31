@@ -92,6 +92,7 @@
   "resume": {
     "title": "Resume",
     "name": "Jonas Danilov",
+    "print": "Print document",
     "contacts": {
       "title": "Contacts"
     },

@@ -2,7 +2,7 @@
     <div>
         <!-- Print -->
         <button class="tag resume__print" type="button" @click="print">
-            🖨 Print document
+            🖨 {{ t('resume.print') }}
         </button>
 
         <!-- Resume -->
