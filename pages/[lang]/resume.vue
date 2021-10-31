@@ -82,6 +82,14 @@
                         </li>
                     </ul>
                 </section>
+
+                <!-- Info message -->
+                <section class="resume__info">
+                    {{ t('resume.info.message') }}
+                    <a :href="`https://kriakiku.netlify.app/${locale}/portfolio`">
+                        https://kriakiku.netlify.app/{{ locale }}
+                    </a>
+                </section>
             </div>
 
             <!-- Main -->
@@ -220,7 +228,7 @@ const { t, locale } = useI18n()
 const removeEmoji = (string) => string.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, '')
 
 onMounted(() => {
-    process.client && window && window.print();
+    process.env.NODE_ENV !== 'development' && process.client && window && window.print();
 })
 </script>
 
@@ -230,7 +238,7 @@ onMounted(() => {
         display: grid;
         grid-template-columns: 74mm 1fr; 
         grid-template-rows: 1fr 30mm; 
-        gap: 0px 10mm;
+        gap: 0px 6mm;
         grid-template-areas: 
             "meta content"
             "skills skills"; 
@@ -298,13 +306,6 @@ onMounted(() => {
             grid-area: meta;
         }
 
-        &__skills {
-            grid-area: skills;
-            display: flex;
-            padding-right: 12mm;
-            margin-top: -4.8mm;
-        }
-
         &__logo {
             width: 15mm;
             height: 15mm;
@@ -340,6 +341,22 @@ onMounted(() => {
                     margin-right: 2.2mm;
                 }
             }
+        }
+
+        &__info {
+            box-shadow: inset 0 0 0 20mm #eeeff1;
+            border-radius: 1.4mm;
+            padding: 2mm 3mm;
+            text-align: justify;
+            margin-top: 2mm;
+            font-weight: 400;
+        }
+
+        &__skills {
+            grid-area: skills;
+            display: flex;
+            padding-right: 12mm;
+            margin-top: 0mm;
         }
 
         &__experience {

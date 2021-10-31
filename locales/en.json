@@ -109,6 +109,9 @@
     },
     "skills": {
       "title": "Skills"
+    },
+    "info": {
+      "message": "The resume contains stripped-down information about my work experience and skills. More information in my portfolio:"
     }
   }
 }
