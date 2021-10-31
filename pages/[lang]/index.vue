@@ -9,7 +9,7 @@
     </div>
     <div class="about__main">
         <h1 class="about__title" v-text="t('about.title')" />
-        <div class="about__content" role="paragraph">
+        <div class="about__content">
             {{ t('about.content') }}
 
             <NuxtLink class="about__link" :to="`/${locale}/portfolio`">

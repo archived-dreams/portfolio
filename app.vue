@@ -44,12 +44,9 @@ watch(
   { immediate: true }
 )
 
-</script>
-
-<script>
-export default {
-  middleware() {
-    console.log('-------------')
+useMeta({
+  htmlAttrs: {
+    lang: locale
   }
-}
+})
 </script>
