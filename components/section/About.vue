@@ -3,7 +3,8 @@
     <div class="about__photo">
         <picture>
             <source srcset="/photo.webp" type="image/webp">
-            <img src="/photo.png" alt="Photo" width="405" height="512" :style="{ aspectRatio: '405 / 512' }">
+            <!-- aspectRation - horizontal .1 => A trick to bypass a bug in chrome when rendering -->
+            <img src="/photo.png" alt="Photo" width="405" height="512" :style="{ aspectRatio: '405.1 / 512' }">
         </picture>
     </div>
     <div class="about__main">

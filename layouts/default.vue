@@ -57,8 +57,8 @@ useMeta({
         color-scheme: light;
 
         @media screen and (min-width: 617px) {
-            // scrollbar-width: none;
-            // ::-webkit-scrollbar { display: block; }
+            scrollbar-width: none;
+            ::-webkit-scrollbar { display: block; }
             scroll-snap-type: y mandatory;
             scroll-behavior: smooth;
             overflow-y: scroll;
@@ -68,10 +68,6 @@ useMeta({
         color: var(--main-color);
         background-color: var(--background-color);
     }
-
-    // body {
-    //     overflow-y: scroll;
-    // }
 
     /**
      * Dark mode
