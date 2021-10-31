@@ -14,7 +14,7 @@
                 </a>
             </li>
             <!-- Resume -->
-            <li class="menu__item" v-if="false">
+            <li class="menu__item">
                 <NuxtLink class="menu__link" :to="`/${locale}/resume`">
                     {{ t('ui.menu.resume') }}
                 </NuxtLink>

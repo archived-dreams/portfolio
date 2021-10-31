@@ -4,7 +4,7 @@
         <picture>
             <source srcset="/photo.webp" type="image/webp" />
             <!-- aspectRation - horizontal .1 => A trick to bypass a bug in chrome when rendering -->
-            <img src="/photo.png" alt="Photo" width="405" height="512" :style="{ aspectRatio: '405.1 / 512' }">
+            <img src="/photo.png" alt="Photo" width="405" height="512" :style="{ aspectRatio: '405.1 / 512' }" />
         </picture>
     </div>
     <div class="about__main">
