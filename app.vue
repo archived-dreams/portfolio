@@ -44,9 +44,17 @@ watch(
   { immediate: true }
 )
 
+/** Windows system detection */
 useMeta({
   htmlAttrs: {
     lang: locale
-  }
+  },
+  script: [
+    {
+      /** Windows system detection */
+      type: 'application/javascript',
+      src: `data:application/javascript,${encodeURIComponent(`String(navigator.userAgentData ? navigator.userAgentData.platform : navigator.userAgent).toLowerCase().includes('windows') ? document.body.classList.add('root--hide-flags') : null;`)}`
+    }
+  ]
 })
 </script>

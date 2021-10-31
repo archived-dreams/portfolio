@@ -79,13 +79,13 @@
                         </h2>
                         <ul class="resume__list">
                             <li class="resume__languages-item">
-                                <span class="resume__icon">🇷🇺</span> {{ t('about.tags.russian') }} <span class="resume--light">— {{ t('about.tags.native') }}</span>
+                                <span class="resume__icon icon--flag">🇷🇺</span> {{ t('about.tags.russian') }} <span class="resume--light">— {{ t('about.tags.native') }}</span>
                             </li>
                             <li class="resume__languages-item">
-                                <span class="resume__icon">🇱🇹</span> {{ t('about.tags.lithuanian') }} <span class="resume--light">— B2</span>
+                                <span class="resume__icon icon--flag">🇱🇹</span> {{ t('about.tags.lithuanian') }} <span class="resume--light">— B2</span>
                             </li>
                             <li class="resume__languages-item">
-                                <span class="resume__icon">🇬🇧</span> {{ t('about.tags.english') }} <span class="resume--light">— A2</span>
+                                <span class="resume__icon icon--flag">🇬🇧</span> {{ t('about.tags.english') }} <span class="resume--light">— A2</span>
                             </li>
                         </ul>
                     </section>

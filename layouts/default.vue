@@ -41,7 +41,7 @@ useMeta({
         { property: 'profile:first_name', content: t('meta.firstName') },
         { property: 'profile:last_name', content: t('meta.lastName') },
         { property: 'profile:gender', content: 'male' },
-    ],
+    ]
 })
 
 </script>
@@ -124,5 +124,11 @@ useMeta({
     .fade-enter-from,
     .fade-leave-to {
         opacity: 0;
+    }
+
+    .root {
+        &--hide-flags .icon--flag {
+            display: none;
+        }
     }
 </style>

@@ -35,9 +35,9 @@
                 <UiTag>♥️ Laravel</UiTag>
                 <UiTag>♥️ A11y</UiTag>
                 <UiTag>♥️ {{ t('about.tags.bem') }}</UiTag>
-                <UiTag>🇷🇺 {{ t('about.tags.russian') }} <small>({{ t('about.tags.native') }})</small></UiTag>
-                <UiTag>🇱🇹 {{ t('about.tags.lithuanian') }} <small>(B2)</small></UiTag>
-                <UiTag>🇬🇧 {{ t('about.tags.english') }} <small>(A2)</small></UiTag>
+                <UiTag><span class="icon--flag">🇷🇺</span> {{ t('about.tags.russian') }} <small>({{ t('about.tags.native') }})</small></UiTag>
+                <UiTag><span class="icon--flag">🇱🇹</span> {{ t('about.tags.lithuanian') }} <small>(B2)</small></UiTag>
+                <UiTag><span class="icon--flag">🇬🇧</span> {{ t('about.tags.english') }} <small>(A2)</small></UiTag>
             </div>
         </div>
     </div>
