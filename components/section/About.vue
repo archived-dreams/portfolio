@@ -12,6 +12,10 @@
         <div class="about__content" role="paragraph">
             {{ t('about.content') }}
 
+            <NuxtLink class="about__link" :to="`/${locale}/portfolio`">
+                {{ t('about.action') }}
+            </NuxtLink>
+
             <div class="about__tags">
                 <UiTag>♥️ UI/UX Design</UiTag>
                 <UiTag>♥️ Penetration testing</UiTag>
@@ -36,7 +40,7 @@
 </template>
 
 <script setup>
-const { t } = useI18n()
+const { t, locale } = useI18n()
 </script>
 
 <style lang="scss">
@@ -104,6 +108,12 @@ const { t } = useI18n()
             @media screen and (max-width: 614px) {
                 text-align: center;
             }
+        }
+
+        &__link {
+            color: var(--link-color);
+            text-decoration: none;
+            margin-left: 6px;
         }
     }
 </style>
