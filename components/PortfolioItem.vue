@@ -5,7 +5,8 @@
         :id="props.name"
         :style="{
             '--background-left': gradientColors[0],
-            '--background-right': gradientColors[1]
+            '--background-right': gradientColors[1],
+            '--aspect-ratio': `${mediaWidth} / ${mediaHeight}`,
         }"
     >
         <div class="container portfolio__inner" :class="{ 'portfolio--grid': grid }">
@@ -21,7 +22,7 @@
                 <div class="portfolio__tags">
                     <slot name="tags" />
                 </div>
-                <p class="portfolio__description">
+                <p class="portfolio__description" :class="mediaSize ? `portfolio__description--${descriptionSize}` : null">
                     <slot name="description">
                         {{ t(`portfolio.${props.name}.description`) }}
                     </slot>
@@ -30,14 +31,13 @@
             <div class="portfolio__media" :class="mediaSize ? `portfolio__media--${mediaSize}` : null">
                 <slot name="media">
                     <picture>
-                        <source :srcset="`/portfolio/${props.name}/screenshot.webp`" type="image/webp">
+                        <source :srcset="`/portfolio/${props.name}/screenshot.webp`" type="image/webp" />
                         <img 
                             :src="`/portfolio/${props.name}/screenshot.jpg`" 
                             loading="lazy" 
                             alt="Screenshot"
                             :width="String(mediaWidth)"
                             :height="String(mediaHeight)"
-                            :style="{ aspectRatio: `${mediaWidth} / ${mediaHeight}` }"
                         />
                     </picture>
                 </slot>
@@ -55,6 +55,10 @@ const props = defineProps({
     mediaWidth: [Number, String],
     mediaHeight: [Number, String],
     mediaSize: {
+        type: String,
+        default: () => null
+    },
+    descriptionSize: {
         type: String,
         default: () => null
     }

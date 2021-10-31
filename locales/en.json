@@ -45,7 +45,8 @@
       "google-play": "Google Play",
       "pet": "Pet project",
       "opensource": "Opensource",
-      "mvp": "MVP"
+      "mvp": "MVP",
+      "open-hackerone": "Profile on HackerOne"
     },
     "webtransfer": {
       "title": "🏦 Webtransfer Finance",
@@ -80,6 +81,10 @@
     "b2bhomer": {
       "title": "🏠 B2Bhomer",
       "description": "Corporate search and rental housing service in Germany. Technologies used: React, Apollo Server, Node.js ."
+    },
+    "pentests": {
+      "title": "👨‍🔬 Information Security Researcher",
+      "description": "This field of activity is my hobby. I have experience in conducting audits in banks, government resources, electronic signature providers, mobile operators, social networks... /Observing the NDA, I cannot disclose information about some of the clients./"
     }
   },
   "timeline": {

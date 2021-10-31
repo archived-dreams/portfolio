@@ -1,7 +1,7 @@
 <template>
     <NuxtLink class="logo" :to="`/${locale}`">
         <picture>
-            <source srcset="/logo.webp" type="image/webp">
+            <source srcset="/logo.webp" type="image/webp" />
             <img class="logo__image" src="/logo.png" alt="😜" :aria-label="t('ui.logo')" width="48" height="48" />
         </picture>
         <p class="logo__title">Jonas<br />Danilov</p>

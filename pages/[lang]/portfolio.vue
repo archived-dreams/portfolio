@@ -6,6 +6,7 @@
             <!-- Blocks -->
             <div class="portfolio__list" ref="list">
                 <PortfolioDonatepay />
+                <PortfolioPentests />
                 <PortfolioB2bhomer />
                 <PortfolioIpserver />
                 <PortfolioEsteri />
@@ -191,6 +192,10 @@ useMeta({
         &__description {
             font-size: 1.3rem;
             max-width: 650px;
+
+            &--lg {
+                max-width: 800px;
+            }
         }
 
         &__media {
@@ -214,6 +219,7 @@ useMeta({
                 height: auto;
                 object-fit: cover;
                 color: var(--overlay-color);
+                aspect-ratio: var(--aspect-ratio);
             }
 
             @media screen and (max-width: 560px) {
@@ -254,6 +260,24 @@ useMeta({
                 background-size: 200%;
                 background-position-x: 200px;
                 background-repeat: no-repeat;
+            }
+        }
+
+        &__blockquote {
+            font-size: 1.2rem;
+            margin: 36px 32px;
+            font-weight: 300;
+
+            blockquote {
+                border-left: 6px solid var(--overlay-color);
+                border-radius: 3px;
+                margin-left: 0;
+                padding-left: 24px;
+                font-weight: 300;
+            }
+
+            figcaption {
+                font-weight: 400;
             }
         }
     }
