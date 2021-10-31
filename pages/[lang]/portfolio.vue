@@ -112,6 +112,17 @@ useMeta({
             max-width: 100%;
             position: relative;
             overflow: hidden;
+
+            @media screen and (max-width: 616px) {
+                min-height: auto;
+                margin: 24px 0 0 0;
+                border-radius: 24px;
+                border: 3px solid red;
+
+                &:last-child {
+                    margin-bottom: 24px;
+                }
+            }
         }
 
         &__inner {
@@ -120,6 +131,11 @@ useMeta({
             flex-direction: column;
             justify-content: center;
             padding: 80px 24px !important;
+
+            @media screen and (max-width: 616px) {
+                padding: 24px 24px 48px 24px !important;
+                max-width: calc(100% - 48px) !important;
+            }
         }
 
         @media screen and (min-width: 617px) {
@@ -182,6 +198,7 @@ useMeta({
             border-radius: 6px;
             box-shadow: 0 0 0 4px var(--overlay-color);
             background-color: var(--overlay-color);
+            max-width: 100%;
 
             @media screen and (min-width: 561px) {
                 &--md {
@@ -200,10 +217,9 @@ useMeta({
 
             @media screen and (max-width: 560px) {
                 display: block;
-                overflow: scroll;
+                overflow: auto;
                 min-height: 210px;
                 max-height: 210px;
-                object-fit: contain;
 
                 img {
                     max-height: 210px;
