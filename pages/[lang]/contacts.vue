@@ -43,6 +43,26 @@
                         <p class="contacts__value">https://hackerone.com/kriakiku</p>
                     </a>
                 </li>
+                <!-- Github -->
+                <li class="contacts__item">
+                    <a class="contacts__link" href="https://github.com/kriakiku" target="_blank">
+                        <h4 class="contacts__label">
+                            <img class="contacts__icon" src="/icons/github.svg" alt="Github Logo" width="18" height="18" />
+                            Github
+                        </h4>
+                        <p class="contacts__value">https://github.com/kriakiku</p>
+                    </a>
+                </li>
+                <!-- Facebook -->
+                <li class="contacts__item">
+                    <a class="contacts__link" href="https://www.facebook.com/kriakiku/" target="_blank">
+                        <h4 class="contacts__label">
+                            <img class="contacts__icon" src="/icons/facebook.svg" alt="Facebook Logo" width="18" height="18" />
+                            Facebook
+                        </h4>
+                        <p class="contacts__value">https://www.facebook.com/kriakiku</p>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="contacts__art">
@@ -71,6 +91,7 @@ useMeta({
         margin: 42px 0;
 
         @media screen and (max-width: 628px) {
+            flex-direction: column-reverse;
             justify-content: center;
         }
 
@@ -83,7 +104,7 @@ useMeta({
             align-items: center;
             justify-content: center;
             flex: 1;
-            height: 330px;
+            height: 508px;
             margin-left: 24px;
             margin-top: 80px;
             background: var(--overlay-color) url(/contacts-overlay.jpg);
@@ -92,7 +113,14 @@ useMeta({
             border-radius: 6px;
 
             @media screen and (max-width: 628px) {
-                display: none;
+                max-height: 130px;
+                min-height: 130px;
+                margin: 0;
+
+                & > div {
+                    max-height: 150px !important;
+                    margin-top: -12px !important;
+                }
             }
         }
 
