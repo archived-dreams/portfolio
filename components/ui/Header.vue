@@ -10,7 +10,7 @@
 <style lang="scss">
     .header {
         position: sticky;
-        z-index: 1;
+        z-index: 5;
         top: 0;
         backdrop-filter: blur(6px);
         background-color: var(--background-opacity-color);
