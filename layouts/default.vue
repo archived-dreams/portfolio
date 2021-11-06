@@ -2,7 +2,7 @@
     <div class="layout">
         <!-- Meta :: Static -->
         <Head>
-            <Link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+            <Link rel="icon" href="/favicon.ico" type="image/x-icon" />
             <Link rel="preload" as="image" href="/logo.webp" type="image/webp" />
             <!-- <Meta name="theme-color" content="#6d1942" /> -->
         </Head>
