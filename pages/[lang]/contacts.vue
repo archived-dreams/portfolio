@@ -5,12 +5,12 @@
             <ul class="contacts__list">
                 <!-- Email -->
                 <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:jquery.ts@gmail.com" target="_blank">
+                    <a class="contacts__link" href="mailto:kriakiku@icloud.com" target="_blank">
                         <h4 class="contacts__label">
                             <span class="contacts__icon" role="img">📮</span>
                             Email
                         </h4>
-                        <p class="contacts__value">jquery.ts@gmail.com</p>
+                        <p class="contacts__value">kriakiku@icloud.com</p>
                     </a>
                 </li>
                 <!-- Telegram -->
