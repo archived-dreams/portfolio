@@ -92,7 +92,7 @@
       "description": "Service for accepting donations on streams. Originally developed as a college thesis (~2018). It was later published on Github."
     },
     "b2bhomer": {
-      "title": "🏠 B2BHomer",
+      "title": "🏠 NDA (Booking apartments)",
       "description": "Corporate search and rental housing service in Germany. Technologies used: React, Apollo Server, Node.js."
     },
     "pentests": {
